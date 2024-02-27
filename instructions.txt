@@ -1,0 +1,5 @@
+docker build -t titanic-api:1.0.0
+docker container create --name titanic-api-clv -p 8080:8080 titanic-api-clv:1.0.0
+docker container start titanic-api-clv
+docker save -o "C:\Users\Asus\Documents\AI_ML Projects\titanic-api-clv.tar" titanic-api-clv:1.0.0
+docker load -i titanic-api-clv:1.0.0
